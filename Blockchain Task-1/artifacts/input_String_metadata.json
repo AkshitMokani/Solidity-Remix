@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newValue",
+						"type": "string"
+					}
+				],
+				"name": "setvalue",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "value",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Blockchain Task-1/2input_String.sol": "input_String"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Blockchain Task-1/2input_String.sol": {
+			"keccak256": "0x757e87e6dbd5f78e46413f10084746856d70c578cf90936c2bbb241b612fc66b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b361c1ec2b66188d7b9e6df6e8e9cafe5d5f547a8276e9cd4c89f9346c9ae479",
+				"dweb:/ipfs/Qmdqddj8rPeb7QBkqyDaU2iJWRCTESzBSpY7DSKbVKCvBW"
+			]
+		}
+	},
+	"version": 1
+}

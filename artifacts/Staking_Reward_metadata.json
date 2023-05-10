@@ -1,0 +1,215 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newUnlockPeriod",
+						"type": "uint256"
+					}
+				],
+				"name": "changeUnlockPeriod",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_stakerId",
+						"type": "uint256"
+					}
+				],
+				"name": "getStakersById",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "stakerId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "stakerAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dateCreated",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dateUnlocked",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "interestPercentage",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountStaked",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "interest",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "open",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Staking_Reward.Stakers",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numOfDays",
+						"type": "uint256"
+					}
+				],
+				"name": "stake_ether",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "stakers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "stakerId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "stakerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateCreated",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateUnlocked",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "interestPercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountStaked",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "interest",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "open",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw_ether",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Staking_Reward.sol": "Staking_Reward"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Staking_Reward.sol": {
+			"keccak256": "0xb1b3458c96518a044404804dace137b30f2ca37d7ac47f2339f043bf5e4b02ce",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b2dfe209c685bb5cf44b0390be77e82fc011f38881f181f57b1d1c49e0b45b00",
+				"dweb:/ipfs/QmZDk36Mac9LaTGtdcryKsSvCdEjB4rPT1ooEYKFPmwu9U"
+			]
+		}
+	},
+	"version": 1
+}

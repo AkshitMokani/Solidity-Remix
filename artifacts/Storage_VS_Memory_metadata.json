@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "memry",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "storge",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "student",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Storage_VS_Memory.sol": "Storage_VS_Memory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Storage_VS_Memory.sol": {
+			"keccak256": "0xaa6ad11f53ee45fff9a5b2cae4d58a8f0ea7148a6a725234439a4fc8c5376731",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0dcb31ec088b0fc8320199f05e4c9ba3d639f54598ac32e66fdb7f3593b94e2e",
+				"dweb:/ipfs/QmXTHcCvT346dcHSQRJNajbxd9rARsUcgdA6sZZcXGT1K6"
+			]
+		}
+	},
+	"version": 1
+}

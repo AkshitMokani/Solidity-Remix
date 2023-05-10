@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum EnumExample.Color",
+						"name": "_newColor",
+						"type": "uint8"
+					}
+				],
+				"name": "changeColor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myColor",
+				"outputs": [
+					{
+						"internalType": "enum EnumExample.Color",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Enum.sol": "EnumExample"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Enum.sol": {
+			"keccak256": "0x5cbb3d9f2dd180fd7f6f4d7b3696666a7a458ac168178c423dcd28d1be5a25cf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://359709715e62a28e89be89c3cdcd74053eb6737632158e234718c9f7dc92df5b",
+				"dweb:/ipfs/QmWGSYBPwUgqWNaAFLyH31qhrNMnrxepxzqBb6CkGt58YJ"
+			]
+		}
+	},
+	"version": 1
+}

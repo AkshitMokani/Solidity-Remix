@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"function_1.sol": "unction"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"function_1.sol": {
+			"keccak256": "0xe04aadf3c08a49cad7c57f724bf41360f5cca4e525cbb1352311cf2ed14908be",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://279fddae88b821ac1a432215262053b2cda5f3c5662d1b8ee5a8b28ad6efd846",
+				"dweb:/ipfs/QmaSHA5E2tmiyd1HiF8YXVuKRoq3zCzAxSGs6KPR2XdrNQ"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "coin",
+						"type": "uint256"
+					}
+				],
+				"name": "Set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Subtract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "coins",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Add_Subtract_Counter.sol": "Add_Subtract_Counter"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Add_Subtract_Counter.sol": {
+			"keccak256": "0xb24ddf5a99fefb14ba0a6a9c15c9afeb1b49329af05c91399e2cc9395d562508",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c41af29459fa8c4816b58c173c9e88fb087ef923d1c46636481259f65213122d",
+				"dweb:/ipfs/QmbnLVkZdvTK6sR8Q4gGLgtfruPsTkcjhTCaGdN3zwj3WY"
+			]
+		}
+	},
+	"version": 1
+}

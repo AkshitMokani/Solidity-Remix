@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"E-Commerce/ecommerce.sol": "ecommerce"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"E-Commerce/ecommerce.sol": {
+			"keccak256": "0xa643d5dfbb8de65f978a9babc66e49c1bf3f04ddcf7bd5cab1ae9ce3ccb8989c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c271d6ad423486e5d2d2aae254cf2469bae78adebdb38ca5ac7e9c219bccbac6",
+				"dweb:/ipfs/QmRXAYNssBr25Wgr3pp9gm9EGmZ7veP5Ba12p3aH5wQYZM"
+			]
+		}
+	},
+	"version": 1
+}

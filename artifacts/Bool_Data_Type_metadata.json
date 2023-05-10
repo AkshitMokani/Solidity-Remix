@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					}
+				],
+				"name": "check",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "value",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Bool_Data_Type.sol": "Bool_Data_Type"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Bool_Data_Type.sol": {
+			"keccak256": "0x58d7a80bf8d4694e75616f7801e81d0af2e85490d167fd7b075884961197dd94",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c66a9128f9e8c01f3905b0f30000ed254a597f0446637ac139b6f139e9a7c15d",
+				"dweb:/ipfs/Qme8bieVSKB5xr7HvLjdrpxfFvqX4GM4G9BP4PZAvMy2qa"
+			]
+		}
+	},
+	"version": 1
+}

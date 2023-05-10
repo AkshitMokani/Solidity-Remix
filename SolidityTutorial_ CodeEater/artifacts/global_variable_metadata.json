@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "block_no",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "msgSender",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SolidityTutorial_ CodeEater/Global_Variable.sol": "global_variable"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SolidityTutorial_ CodeEater/Global_Variable.sol": {
+			"keccak256": "0xfdb2e312d6e09c7679b44068f23e6792f67825b95ddcae5880e7b4aa5c46e406",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://40244207e681b001e3979cee189a7697963fd11dce4ebb1768f036fa50f6f6f0",
+				"dweb:/ipfs/QmarrZzomAnp1MRp76sDasyt8D6CpUzvUUKymNn7BAj2p4"
+			]
+		}
+	},
+	"version": 1
+}

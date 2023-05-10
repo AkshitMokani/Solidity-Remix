@@ -1,0 +1,383 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_interest",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numOfDays",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateInterest",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newUnlockPeriod",
+						"type": "uint256"
+					}
+				],
+				"name": "changeUnlockPeriod",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numOfDays",
+						"type": "uint256"
+					}
+				],
+				"name": "getInterestRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLockperiods",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getStakerIdsByAddresses",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_stakerId",
+						"type": "uint256"
+					}
+				],
+				"name": "getStakersById",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "stakerId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "stakerAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dateCreated",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dateUnlocked",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "interestPercentage",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountStaked",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "interest",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "open",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Staking.Stakers",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "levels",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "lockPeriods",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numOfDays",
+						"type": "uint256"
+					}
+				],
+				"name": "stakeMatic",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "stakerIdsByAddress",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "stakers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "stakerId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "stakerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateCreated",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateUnlocked",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "interestPercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountStaked",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "interest",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "open",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalStakers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numOfDays",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_interest",
+						"type": "uint256"
+					}
+				],
+				"name": "updateLockPeriod",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test,sol.sol": "Staking"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test,sol.sol": {
+			"keccak256": "0xaf3e2f0bebbec2882785631d94d1327e192beaa43e6dbd9852028f5c10c10e72",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://320e62e484c914a7e71799cc7ca0f4fd21b3aac6a8cb74bb09048009da80e93e",
+				"dweb:/ipfs/Qmd2tJvJx5SFtrAXE1kS2cePuEJPf7JfosTfe1BZCNWqPg"
+			]
+		}
+	},
+	"version": 1
+}

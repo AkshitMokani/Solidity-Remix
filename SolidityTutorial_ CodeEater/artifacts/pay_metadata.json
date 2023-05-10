@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "payEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sedEthertoAccount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SolidityTutorial_ CodeEater/payable.sol": "pay"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SolidityTutorial_ CodeEater/payable.sol": {
+			"keccak256": "0xe310d0c4aa4ee483f88ef82e68c2782f938765f74a7afc6a7401450ebb79dde0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c704c1fe0a858e3f22ce1af6cbf201cf20e48c81118083fe64a6a5b0af6dff2e",
+				"dweb:/ipfs/Qmbo6eAYH7sQ3kDfxGGZXaCDvHusYfEM1qYfwheJ68x51s"
+			]
+		}
+	},
+	"version": 1
+}
