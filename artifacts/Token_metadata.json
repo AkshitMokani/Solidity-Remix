@@ -6,106 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "owner",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"name": "Approval",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"name": "Transfer",
-				"type": "event"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "allowance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_spender",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "approve",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balanceOf",
+				"inputs": [],
+				"name": "getCurrent",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -118,54 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "totalSupply",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "transfer",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_from",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "transferFrom",
+				"name": "increment",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -184,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test1.sol": "Token"
+			"Token.sol": "Token"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -198,12 +53,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"test1.sol": {
-			"keccak256": "0xd17e1ec7db668dffedf643fa0a4cf5c773400c3d542b23c23ba187c1487e5f54",
+		"Token.sol": {
+			"keccak256": "0x065895e65432f7ff5d239472b7c7c4d0c7f8b5a847168e81455e0621f56a774f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0af76331fb3018b0d98453891ba9ce9c6d9ee169e93f1dc344facb60d1a19091",
-				"dweb:/ipfs/QmZTaGTF3ZGcFn2jpdLX4njZPV8wo6bdAj8Gf5dagshiEn"
+				"bzz-raw://823d41135df24c5dc6568bf6675d962b521199b9fe867b40df66104138899688",
+				"dweb:/ipfs/QmZ48kwKks6SvKHFyLAQw2EWrUEF2LQt9cBjTs6KJAD9fu"
 			]
 		}
 	},
