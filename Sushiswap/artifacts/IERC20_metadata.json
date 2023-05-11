@@ -6,36 +6,38 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "addLiquidity",
-				"outputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "addLiquidityETH",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "removeLiquidity",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "removeLiquidityETH",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "swapExactTokensForTokens",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -43,19 +45,37 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "payable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "swapTokensForExactTokens",
-				"outputs": [],
-				"stateMutability": "payable",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -71,7 +91,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"UNISWAP V2/uniswap.sol": "uniswap"
+			"Sushiswap/sushiswap.sol": "IERC20"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -85,12 +105,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"UNISWAP V2/uniswap.sol": {
-			"keccak256": "0x64f4c12d61f12029ee0e80baf177c1e7933498977715e08fa805c1de03412638",
+		"Sushiswap/sushiswap.sol": {
+			"keccak256": "0xe1a8f320de273a5e57c43bea4b0be1481691916758128cea284ceb410b56ee2b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d3302d5a48afe7104b561ae55b3d917b58aa35b98c5c2257cfac29486e5a52f7",
-				"dweb:/ipfs/Qmf32mguff6TPgjySha9BqKcS56ZScNsEMQUjQSLKTrHFW"
+				"bzz-raw://a12b28a23f5fe478a08f91a5201f8379b6687022234d3c83f6358b1de0712d0a",
+				"dweb:/ipfs/QmYFagEihXgAXYe91PC57cT7BpndjxDpRq8Yh4yyzvD5dX"
 			]
 		},
 		"https://github.com/Uniswap/v2-core/blob/master/contracts/interfaces/IUniswapV2Factory.sol": {

@@ -71,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"UNISWAP V2/uniswap.sol": "uniswap"
+			"Sushiswap/sushiswap.sol": "uniswap"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -85,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"UNISWAP V2/uniswap.sol": {
-			"keccak256": "0x64f4c12d61f12029ee0e80baf177c1e7933498977715e08fa805c1de03412638",
+		"Sushiswap/sushiswap.sol": {
+			"keccak256": "0xf6d605e21dd6660ebb4537c31ad60e4ac49884bcfe12d2886de3149c2b033207",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d3302d5a48afe7104b561ae55b3d917b58aa35b98c5c2257cfac29486e5a52f7",
-				"dweb:/ipfs/Qmf32mguff6TPgjySha9BqKcS56ZScNsEMQUjQSLKTrHFW"
+				"bzz-raw://b379da3fd23eb5e0670dec843406b81f753cead638847a52c27395ec11735608",
+				"dweb:/ipfs/QmXSS518popEwBixCBa3YofRVCRD4AuyKysSMztDaP5NFc"
 			]
 		},
 		"https://github.com/Uniswap/v2-core/blob/master/contracts/interfaces/IUniswapV2Factory.sol": {

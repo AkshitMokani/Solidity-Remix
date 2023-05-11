@@ -31,16 +31,12 @@
 	},
 	"data": {
 		"bytecode": {
-			"functionDebugData": {},
-			"generatedSources": [],
 			"linkReferences": {},
 			"object": "",
 			"opcodes": "",
 			"sourceMap": ""
 		},
 		"deployedBytecode": {
-			"functionDebugData": {},
-			"generatedSources": [],
 			"immutableReferences": {},
 			"linkReferences": {},
 			"object": "",
@@ -49,49 +45,24 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"approve(address,uint256)": "095ea7b3",
-			"balanceOf(address)": "70a08231",
-			"transferFrom(address,address,uint256)": "23b872dd"
+			"_tokenBalanceOf(address)": "036a8102",
+			"deposit(address,address,address,uint256,uint256)": "02b9446c"
 		}
 	},
 	"abi": [
 		{
 			"inputs": [
 				{
-					"internalType": "address",
-					"name": "spender",
+					"internalType": "contract IERC20",
+					"name": "token",
 					"type": "address"
-				},
+				}
+			],
+			"name": "_tokenBalanceOf",
+			"outputs": [
 				{
 					"internalType": "uint256",
 					"name": "amount",
-					"type": "uint256"
-				}
-			],
-			"name": "approve",
-			"outputs": [
-				{
-					"internalType": "bool",
-					"name": "",
-					"type": "bool"
-				}
-			],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "account",
-					"type": "address"
-				}
-			],
-			"name": "balanceOf",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
 					"type": "uint256"
 				}
 			],
@@ -101,30 +72,45 @@
 		{
 			"inputs": [
 				{
-					"internalType": "address",
-					"name": "sender",
+					"internalType": "contract IERC20",
+					"name": "token",
 					"type": "address"
 				},
 				{
 					"internalType": "address",
-					"name": "recipient",
+					"name": "from",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "to",
 					"type": "address"
 				},
 				{
 					"internalType": "uint256",
 					"name": "amount",
 					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "share",
+					"type": "uint256"
 				}
 			],
-			"name": "transferFrom",
+			"name": "deposit",
 			"outputs": [
 				{
-					"internalType": "bool",
-					"name": "",
-					"type": "bool"
+					"internalType": "uint256",
+					"name": "amountOut",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "shareOut",
+					"type": "uint256"
 				}
 			],
-			"stateMutability": "nonpayable",
+			"stateMutability": "payable",
 			"type": "function"
 		}
 	]

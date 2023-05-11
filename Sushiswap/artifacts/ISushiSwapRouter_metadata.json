@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.20+commit.a1b79de6"
+		"version": "0.6.12+commit.27d51765"
 	},
 	"language": "Solidity",
 	"output": {
@@ -8,40 +8,16 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "spender",
+						"internalType": "contract IERC20",
+						"name": "token",
 						"type": "address"
-					},
+					}
+				],
+				"name": "_tokenBalanceOf",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "approve",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "balanceOf",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -51,30 +27,45 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "sender",
+						"internalType": "contract IERC20",
+						"name": "token",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "recipient",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "share",
+						"type": "uint256"
 					}
 				],
-				"name": "transferFrom",
+				"name": "deposit",
 				"outputs": [
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "shareOut",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -91,9 +82,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Aave.sol": "IERC20"
+			"Sushiswap/sushiswap.sol": "ISushiSwapRouter"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -105,12 +96,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Aave.sol": {
-			"keccak256": "0x614e0a0fba4a53cbb9aa95ba76c673e35fbee892488bc87e2899ef83376045ac",
+		"Sushiswap/sushiswap.sol": {
+			"keccak256": "0x8b388bf1ebba76693ee1cd657b79f94d7fab98573602eb07a454fd37b5e89aff",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://57741968fc5e4ac69ee0ababcfd25387b6c4b73304d7e44e006548565475dd03",
-				"dweb:/ipfs/QmXZcDgGghusVBUZVjETPmneRcg3oHV2qJJZRwDz3tGRVz"
+				"bzz-raw://b52db2dc2cdfd966e7abbb486c5fba4cb6ff4f4e576564de7885c3938ab05023",
+				"dweb:/ipfs/QmbWi7pqoDCgmWGFizPr31hGtSaNFyHQh76UzNfxrQ85he"
 			]
 		}
 	},

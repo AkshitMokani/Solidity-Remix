@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Sushiswap/sushiswap.sol": "sushiswap"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Sushiswap/sushiswap.sol": {
+			"keccak256": "0x51a785c158f46d0df953938dcac4edb662d45f7028c41424060ede1b3a1e62fc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c9e9ce748be35b01ec661e89650dc18d9ae68784d4561a341d0b0d1832333d2",
+				"dweb:/ipfs/QmQ2JkEqDti6H94PdHSGD7W1QhjTQWkiqzH6P8tj7JJdni"
+			]
+		}
+	},
+	"version": 1
+}

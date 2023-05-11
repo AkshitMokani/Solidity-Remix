@@ -28,8 +28,8 @@ contract uniswap
         uint amtA = IERC20(tokenA).balanceOf(address(this));
         uint amtB = IERC20(tokenB).balanceOf(address(this));
 
-        IERC20(tokenA).transferFrom(msg.sender,address(this),amtA);
-        IERC20(tokenB).transferFrom(msg.sender,address(this),amtB);
+        // IERC20(tokenA).transferFrom(msg.sender,address(this),amtA);
+        // IERC20(tokenB).transferFrom(msg.sender,address(this),amtB);
 
         IERC20(tokenA).approve(routerV2,amtA);
         IERC20(tokenB).approve(routerV2,amtB);
@@ -67,7 +67,7 @@ contract uniswap
     {
         uint amtA = IERC20(tokenA).balanceOf(address(this));
 
-        IERC20(tokenA).transferFrom(msg.sender,address(this),amtA);
+        // IERC20(tokenA).transferFrom(msg.sender,address(this),amtA);
         IERC20(tokenA).approve(routerV2,amtA);
 
         IUniswapV2Router02(routerV2).addLiquidityETH{value : address(this).balance}(
@@ -100,7 +100,7 @@ contract uniswap
     {
         uint amt = IERC20(tokenA).balanceOf(address(this));
 
-        IERC20(tokenA).transferFrom(msg.sender,address(this),amt);
+        // IERC20(tokenA).transferFrom(msg.sender,address(this),amt);
         IERC20(tokenA).approve(routerV2,amt);
 
         address[] memory path = new address[](2);
@@ -132,7 +132,7 @@ contract uniswap
 
         //function transferFrom(address from, address to, uint256 amount) external returns (bool);
         // Transfer input token to this contract
-        IERC20(tokenA).transferFrom(msg.sender,address(this),bal);
+        // IERC20(tokenA).transferFrom(msg.sender,address(this),bal);
         IERC20(tokenA).approve(routerV2,bal);
 
         uint[] memory amt = IUniswapV2Router02(routerV2).getAmountsOut(bal,path);
