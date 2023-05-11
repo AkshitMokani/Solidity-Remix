@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.19+commit.7dd6d404"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
@@ -272,9 +272,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test.sol": "test"
+			"TestToken.sol": "test"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -286,12 +286,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"test.sol": {
-			"keccak256": "0xae4d094092e22d7bf6bfd5599f0002edf0ad22dbe0ae108d6178c29552efa974",
+		"TestToken.sol": {
+			"keccak256": "0x401f2b2991872dcf28d16f096c31b204c72c1802dcb9d0c99a94bc9cd954d8c2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c78817d813cfd30f948541bd3334abc48e0462e0129619045338ee6fe9f14752",
-				"dweb:/ipfs/QmZA6JFy4nXR6rhqrQwDwNjUDMggQmYEveeZdBqPYhoG7R"
+				"bzz-raw://19988a8decb521642abf60a95d2c2b2b535993889001302ce67fd3db4206bf4e",
+				"dweb:/ipfs/QmNzbshYXKsoVX66CyDY8BqZXKkd5zqsuz4BhyzMey7cGv"
 			]
 		}
 	},
