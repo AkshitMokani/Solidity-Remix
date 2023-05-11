@@ -29,13 +29,15 @@ interface SushiSwapRouter
 contract Sushiswap
 {
     address sushiswapRouter = 0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506;
-    address tokenA = 0x187F663A6c9E9Ac15f6224195C7C8D932703e37a;
-    address tokenB = 0x6a276fa78587a0B1F1F7b54964830008ab298a8a;
+    address tokenA = 0x187F663A6c9E9Ac15f6224195C7C8D932703e37a; //SLDT 
+    address tokenB = 0x6a276fa78587a0B1F1F7b54964830008ab298a8a; //SolZero 
+    // DAI 0xF14f9596430931E177469715c591513308244e8F
+    address SushiV2Factory = 0xc35DADB65012eC5796536bD9864eD8773aBc74C4;
 
-    function addLiquidity() public
+    function addLiquidity(uint amtA, uint amtB) public
     {
-        uint amtA = IERC20(tokenA).balanceOf(address(this));
-        uint amtB = IERC20(tokenB).balanceOf(address(this));
+        // uint amtA = IERC20(tokenA).balanceOf(address(this));
+        // uint amtB = IERC20(tokenB).balanceOf(address(this));
 
         // IERC20(tokenA).transferFrom(msg.sender,address(this),amtA);
         // IERC20(tokenB).transferFrom(msg.sender,address(this),amtB);
@@ -51,9 +53,47 @@ contract Sushiswap
             block.timestamp
         );
     }
-
-
     
+    function removeLiquidity() public 
+    {
+        address pair = IUniswapV2Factory(SushiV2Factory).getPair(tokenA,tokenB);
+
+        uint liquidityAMount = IERC20(pair).balanceOf(address(this));
+
+        IERC20(pair).approve(sushiswapRouter,liquidityAMount);
+
+        IUniswapV2Router02(sushiswapRouter).removeLiquidity(
+            tokenA,tokenB,
+            liquidityAMount,
+            0,0,
+            msg.sender, //address(this)
+            block.timestamp
+        );
+    }
+
+    function swapExactTokensForTokens() public payable returns(uint)
+    {
+        uint amount = IERC20(tokenA).balanceOf(address(this));
+
+        IERC20(tokenA).approve(sushiswapRouter,amount);
+
+        address[] memory path = new address[](2);
+        path[0] = tokenA;
+        path[1] = tokenB;
+
+        uint[] memory amtOut = IUniswapV2Router02(sushiswapRouter).getAmountsOut(amount,path);
+
+        IUniswapV2Router02(sushiswapRouter).swapExactTokensForTokens(
+            amount,
+            0,
+            path,
+            address(this),
+            block.timestamp
+        );
+
+        return amtOut[1];
+    }
+
     //  function getBalance(address token, address account) external view returns (uint256) {
     //     // Get balance of a token for an account
     //     return IERC20(token).balanceOf(account);
@@ -61,6 +101,6 @@ contract Sushiswap
 
      function getBalance() external view returns (uint256,uint256) {
         // Get balance of a token for an account
-        return (IERC20(tokenA).balanceOf(address(this)),IERC20(tokenA).balanceOf(address(this)));
+        return (IERC20(tokenA).balanceOf(address(this)),IERC20(tokenB).balanceOf(address(this)));
     }
 }

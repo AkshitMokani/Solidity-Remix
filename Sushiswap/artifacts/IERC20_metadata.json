@@ -106,11 +106,11 @@
 	},
 	"sources": {
 		"Sushiswap/sushiswap.sol": {
-			"keccak256": "0xe1a8f320de273a5e57c43bea4b0be1481691916758128cea284ceb410b56ee2b",
+			"keccak256": "0xbe47dbf90a5aba7d488bba4ef532cd932a752d3e25c9febde4b4ea6db4fdfdb0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a12b28a23f5fe478a08f91a5201f8379b6687022234d3c83f6358b1de0712d0a",
-				"dweb:/ipfs/QmYFagEihXgAXYe91PC57cT7BpndjxDpRq8Yh4yyzvD5dX"
+				"bzz-raw://6c702130b99d6b7fe840b00a1dde389081eec20345e3d58e5fc667e7cd9ad320",
+				"dweb:/ipfs/QmeXoFdsaEZwrMAGSrguMkC4oFEZospCKEPK99L1nTay1p"
 			]
 		},
 		"https://github.com/Uniswap/v2-core/blob/master/contracts/interfaces/IUniswapV2Factory.sol": {
