@@ -9,21 +9,21 @@
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
+						"indexed": true,
 						"internalType": "address",
 						"name": "owner",
 						"type": "address"
 					},
 					{
-						"indexed": false,
+						"indexed": true,
 						"internalType": "address",
-						"name": "receiver",
+						"name": "spender",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
@@ -34,21 +34,21 @@
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
+						"indexed": true,
 						"internalType": "address",
-						"name": "owner",
+						"name": "from",
 						"type": "address"
 					},
 					{
-						"indexed": false,
+						"indexed": true,
 						"internalType": "address",
-						"name": "receiver",
+						"name": "to",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
@@ -56,19 +56,6 @@
 				"type": "event"
 			},
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "owner",
-						"type": "address"
-					}
-				],
-				"name": "viewowner",
-				"type": "event"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -77,7 +64,7 @@
 					},
 					{
 						"internalType": "address",
-						"name": "receiver",
+						"name": "spender",
 						"type": "address"
 					}
 				],
@@ -96,7 +83,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "receiver",
+						"name": "spender",
 						"type": "address"
 					},
 					{
@@ -152,7 +139,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "receiver",
+						"name": "recipient",
 						"type": "address"
 					},
 					{
@@ -176,12 +163,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "owner",
+						"name": "sender",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "receiver",
+						"name": "recipient",
 						"type": "address"
 					},
 					{
@@ -215,7 +202,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"TestToken.sol": "IERC20"
+			"ERC20_Token.sol": "IERC20"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -229,12 +216,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"TestToken.sol": {
-			"keccak256": "0xdc08199b263d2898fa0174c1b73076d4a7f3cebc7644a8637eb94caa1799f22e",
+		"ERC20_Token.sol": {
+			"keccak256": "0xb3a4a2918d9e7c747f4984f198103f44e0cb5128c5afde3ce3f4c2be9b2d3b5e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8f35a58099471f291e16ee0fdac1c4fdb5dba41584476cf660e4b969db7d014e",
-				"dweb:/ipfs/QmNPDt3o3SApwR1nzYDGHSnA1XKvtSZDpJHKBvq8yJ9dFf"
+				"bzz-raw://2903d32315cca0bb973dca56055d3cec0ec23b2d5916eb757bba205b1f826694",
+				"dweb:/ipfs/QmeCxRfsPzZVN76zEy8ute6wGDU1nsELXKoP7XBHvcPJ5e"
 			]
 		}
 	},
