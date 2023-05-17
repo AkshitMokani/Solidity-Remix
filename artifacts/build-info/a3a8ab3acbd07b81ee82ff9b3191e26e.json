@@ -1,8 +1,8 @@
 {
-	"id": "a44a450d1ca4767558bc15e793289592",
+	"id": "a3a8ab3acbd07b81ee82ff9b3191e26e",
 	"_format": "hh-sol-build-info-1",
-	"solcVersion": "0.8.7",
-	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"solcVersion": "0.8.20",
+	"solcLongVersion": "0.8.20+commit.a1b79de6",
 	"input": {
 		"language": "Solidity",
 		"sources": {
@@ -55,8 +55,8 @@
 			{
 				"component": "general",
 				"errorCode": "3420",
-				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.7;\"\n--> aave.sol\n\n",
-				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.7;\"",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.20;\"\n--> aave.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.20;\"",
 				"severity": "warning",
 				"sourceLocation": {
 					"end": -1,
