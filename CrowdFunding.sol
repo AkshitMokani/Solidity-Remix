@@ -12,7 +12,7 @@ contract CrowdFunding
     uint public target;
     uint public raisedAmount;
     uint public noOfContributors;
-
+//yeild farming
     struct Request
     {
         string description;
